@@ -21,3 +21,13 @@ Requirements
 Docker 17.12.0
 Koa 2.4.1
 Java 1.8.0_152
+
+
+
+Database:
+
+To start Elasticsearch Database (ESDB), 
+
+enter   ./elasticsearch 
+
+within bin folder of downloaded ESDB file
