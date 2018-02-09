@@ -1,6 +1,6 @@
 # Project Name: Nile
 
-Nile is a micro-service application modelled after Amazon.com's recommendation service architecture. This micro-service repository is the Client Service for Nile. 
+Nile is a micro-service application modelled after Amazon.com's recommendation service architecture. This repository is the Client Service for Nile. 
 
 ## Author
 * Michael Cooper
