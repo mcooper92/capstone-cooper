@@ -30,7 +30,7 @@ The Client Service handles six processes:
 5. Send active user_IDs to the Recommendation Service.
 6. Send users' product page views to the Events Service.
 
-Process #1 relies on an Elasticsearch Database, which is updated on a set interval, to return user search queries in real-time. Similarly, process #4 relies on Redis, which caches the most recent users' recommendations, to return users' recommendations in real-time. In the background, recommendations are added to the Redis cache via an SQS queue and polling service. All other processes happen in real-time. If a user's recommendations are not present in the cache, a default set of recommendations based on popularity is returned to the user and that user is added to the queue to the Recommendation Service.
+Process #1 relies on an Elasticsearch Database, which is updated on a set interval, to return user search queries in real-time. Similarly, process #4 relies on Redis, which caches the most recent users' recommendations, to return users' recommendations in real-time. In the background, recommendations are added to the Redis cache via an SQS queue and polling service. All other processes happen in real-time. If a user's recommendations are not present in the cache, a default set of recommendations based on popularity is returned to the user and that user is added to the SQS queue to the Recommendation Service.
 
 
 ## Getting Started
