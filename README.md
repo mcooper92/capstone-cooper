@@ -47,36 +47,36 @@ These instructions will a copy of the project running on your local machine for 
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
+Do I need ESDB and Redis installation instructions here?
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
+Step 1:
 
 ```
-until finished
+Download Elasticsearch
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+Step 2
+
+```
+Well done, kid. Go buy yourself a drink.
+```
+
+Here's an example of what you get from each DB......
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+Once tests are added, this is where I'll tell you how to use them.
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+Hold your horses. I haven't even deployed yet...but when I do, this is where you'll find those instructions. 
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Elasticsearch](http://www.dropwizard.io/1.0.2/docs/) - Search Database
+* [Redis](https://maven.apache.org/) - Cache 
+* [My Own Two Hands] - You know you want to see where that link takes you...
 
 ## Contributing
 
-Please read [CONTRIBUTING.md]for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md]for details on our code of conduct, and the process for submitting pull requests to me.
