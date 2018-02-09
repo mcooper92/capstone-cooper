@@ -22,7 +22,7 @@ Collaborative based filtering uses a collection of similar users' activity when 
 
 The inputs into this application are user events processed through this micro-service, Client Service, which handles user search queries, user views, and user purchases. 
 
-The Client Service has six duties: 
+The Client Service handles six processes: 
 1. To retrieve products from the product inventory (stored in an Elasticsearch DB) using a user defined search query
 2. To send new products to the Product Inventory Service
 3. To send completed purchase orders to the Order Service
