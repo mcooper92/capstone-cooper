@@ -24,11 +24,11 @@ The inputs into this application are user events processed through this micro-se
 
 The Client Service has six duties: 
 1. To retrieve products from the product inventory (stored in an Elasticsearch DB) using a user defined search query
-2. To send new products to the Product Inventory service
-3. To send completed purchase orders to the Order service
-4. To retrieve recommendations from the Recommendation service
-5. To send active user ID to the Recommendation service
-6. To send user product page views to the Events service
+2. To send new products to the Product Inventory Service
+3. To send completed purchase orders to the Order Service
+4. To retrieve recommendations from the Recommendation Service
+5. To send active user_ID to the Recommendation Service
+6. To send user product page views to the Events Service
 
 Process #1 relies on an Elasticsearch Database, which is updated on a set interval, to return user search queries in real-time. Similarly, process #4 relies on Redis, which caches the most recent users' recommendations, to return users' recommendations in real-time. Recommendations are added to the Redis cache via an SQS queue and polling service. All other processes happen in real-time. If a user's recommendations are not present in the cache, a default set of recommendations based on popularity is returned to the user and that user is added to the queue.
 
