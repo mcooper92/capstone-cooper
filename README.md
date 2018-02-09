@@ -16,9 +16,9 @@ Sure.
 
 When a user shops on Nile (or Amazon), he or she expects to see relevant product recommendations. These recommendations are generated using either content based or collaborative based filtering algorithms. 
 
-Content based filtering prioritizes past user activity for a specific user when filtering the product inventory for product recommendations. 
+Content based filtering prioritizes past user activity for a specific user when filtering the product inventory for product recommendations. In this context, user activity is defined as search queries, product views, and product purchases.
 
-Collaborative based filtering uses a collection of similar users' activity when filtering product inventory for product recommendations. In this context, similar users are defined as users with similar purchase histories. 
+Collaborative based filtering uses a collection of similar users' activity when filtering the product inventory for product recommendations. In this context, similar users are defined as users with similar purchase histories. 
 
 The inputs into this application are user events processed through this micro-service, Client Service, which handles user search queries, user views, and user purchases. 
 
@@ -30,7 +30,7 @@ The Client Service has six duties:
 5. To send active user_ID to the Recommendation Service
 6. To send user product page views to the Events Service
 
-Process #1 relies on an Elasticsearch Database, which is updated on a set interval, to return user search queries in real-time. Similarly, process #4 relies on Redis, which caches the most recent users' recommendations, to return users' recommendations in real-time. Recommendations are added to the Redis cache via an SQS queue and polling service. All other processes happen in real-time. If a user's recommendations are not present in the cache, a default set of recommendations based on popularity is returned to the user and that user is added to the queue.
+Process #1 relies on an Elasticsearch Database, which is updated on a set interval, to return user search queries in real-time. Similarly, process #4 relies on Redis, which caches the most recent users' recommendations, to return users' recommendations in real-time. In the background, recommendations are added to the Redis cache via an SQS queue and polling service. All other processes happen in real-time. If a user's recommendations are not present in the cache, a default set of recommendations based on popularity is returned to the user and that user is added to the queue to the Recommendation Service.
 
 
 ## Getting Started
