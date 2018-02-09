@@ -75,7 +75,6 @@ Hold your horses. I haven't even deployed yet...but when I do, this is where you
 
 * [Elasticsearch](http://www.dropwizard.io/1.0.2/docs/) - Search Database
 * [Redis](https://maven.apache.org/) - Cache 
-* [My Own Two Hands] - You know you want to see where that link takes you...
 
 ## Contributing
 
