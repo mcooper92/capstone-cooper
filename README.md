@@ -7,7 +7,7 @@ Nile is a micro-service application modelled after Amazon.com's recommendation s
 
 ## Project Goal
 
-The goal of this project was to constrast the effectiveness of a collaborative filtered recommendation system against a content filtered recommendation system.
+The goal of this project was to contrast the effectiveness of a collaborative filtered recommendation system against a content filtered recommendation system.
 
 
 ## Tell Me More
